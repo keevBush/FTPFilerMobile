@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FTPFilerMobile.Views.FileInServer"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="White"
+                   Margin="10"
+                   Padding="9"
+                   BorderColor="Gray"
+                   >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView
+                        BackgroundColor="Gray"
+                        CornerRadius="10,0,0,10"
+                        RotationY="4"
+                        VerticalOptions="Center"
+                        />
+                    <Label Text="Filename.cs"
+                           VerticalOptions="Center"
+                           FontAttributes="Bold"
+                           Grid.Column="1"
+                           TextColor="DimGray"
+                           />
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

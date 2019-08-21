@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FTPFilerMobile"
+             x:Class="FTPFilerMobile.MainPage">
+
+    <Grid
+        Padding="10"
+        >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Frame
+            BackgroundColor="White"
+            Padding="5"
+            Grid.Row="1"
+            >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Entry
+                    Placeholder="Host"
+                    PlaceholderColor="Gray"
+                    />
+                <Entry
+                    Placeholder="Username"
+                    PlaceholderColor="Gray"
+                    Grid.Row="1"
+                    />
+                <Entry
+                    Grid.Row="2"
+                    Placeholder="Password"
+                    IsPassword="True"
+                    PlaceholderColor="Gray"
+                    />
+                <Button
+                    BackgroundColor="RoyalBlue"
+                    Text="Connexion"
+                    CornerRadius="10"
+                    Padding="10,0"
+                    VerticalOptions="Center"
+                    TextColor="#e5e9f1"
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    />
+            </Grid>
+        </Frame>
+        <Frame
+            Grid.Row="2"
+            Padding="5"
+            BackgroundColor="#4168df"
+            >
+            <Grid>
+                <ActivityIndicator
+                    Opacity="0.6"
+                    Color="White"
+                    VerticalOptions="Center"
+                    IsRunning="True"
+                    />
+                <ActivityIndicator
+                    Opacity="0.6"
+                    Color="White"
+                    WidthRequest="70"
+                    HeightRequest="70"
+                    IsRunning="True"
+                    />
+            </Grid>
+            
+        </Frame>
+    </Grid>
+
+</ContentPage>
